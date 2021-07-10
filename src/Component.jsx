@@ -1,11 +1,5 @@
 import React from 'react';
 
-
-async function atlasFetchT(fetchUrl, params = {}) {
-    const credentialObj = Object.assign({ credentials: 'same-origin' }, params);
-    return fetch(fetchUrl, credentialObj);
-  }
-
 export default class Component extends React.Component {
     constructor(props) {
         super(props);
@@ -14,9 +8,17 @@ export default class Component extends React.Component {
         };
     }
 
-    componentDidMount = async () => {
-        const url = 'http://158.101.101.134:5000'
-        fetch(url, {mode: 'no-cors', headers: { 'Content-Type': 'application/json' }}).then(response => {
+    componentDidMount = () => {
+        const url = 'http://158.101.101.134:5000/'
+        // fetch(
+        //   url,
+        //   // {
+        //   //   mode: 'no-cors',
+        //   //   headers: { 'Content-Type': 'application/json' },
+        //   // }
+        // )
+        const credentialObj = {mode: 'no-cors'};
+        fetch.apply(null, [url]).then(response => {
             return response.json();
           }).then(data => {
             this.setState({ value: data.data})
