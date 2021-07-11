@@ -17,7 +17,7 @@ export default class Component extends React.Component {
         //   //   headers: { 'Content-Type': 'application/json' },
         //   // }
         // )
-        const credentialObj = {mode: 'no-cors'};
+        // const credentialObj = {mode: 'no-cors'};
         fetch.apply(null, [url]).then(response => {
             return response.json();
           }).then(data => {
