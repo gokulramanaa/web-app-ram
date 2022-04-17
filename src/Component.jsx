@@ -9,7 +9,7 @@ export default class Component extends React.Component {
     }
 
     componentDidMount = () => {
-        const url = 'http://138.91.254.89:5000/'
+        const url = 'http://129.153.139.234/'
         // fetch(
         //   url,
         //   // {
