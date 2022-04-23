@@ -4,9 +4,9 @@ import Component from './Component';
 function App() {
   return (
     <div className="App">
-      <h1>Hello People, React App</h1>
+      <h1>Hello Divya, Hi Ritish</h1>
       <br />
-      <h2>New application deployed from Github.</h2>
+      <h2>Message from me.</h2>
       <Component />
     </div>
   );
