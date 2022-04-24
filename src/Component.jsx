@@ -27,7 +27,7 @@ export default class Component extends React.Component {
           });
         
         const script = document.createElement("script");
-        script.src = "https://use.typekit.net/foobar.js";
+        script.src = "https://ticketmaster-api-staging.github.io/products-and-docs/widgets/countdown/1.0.0/lib/main-widget.js";
         script.async = true;
         document.body.appendChild(script); 
     }
