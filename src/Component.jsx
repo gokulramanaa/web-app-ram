@@ -25,6 +25,16 @@ export default class Component extends React.Component {
           }).catch(err => {
             console.error("Error Reading data " + err);
           });
+        this.loadWidget();
+    }
+    
+    const loadWidget() {
+           const script = document.createElement("script");
+
+    script.src = "https://use.typekit.net/foobar.js";
+    script.async = true;
+
+    document.body.appendChild(script); 
     }
 
     render() {
